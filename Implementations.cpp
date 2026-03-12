@@ -7,12 +7,12 @@ TurnInput RandomInputGenerator::Generate() {
 }
 
 int BasicScoring::ComputeScore(TurnInput input) {
-    return input.value * 10; 
+    return input.value; 
 }
 
 int CustomReward::ComputeReward(int baseScore) {
     // Implementasi Modifikasi 2: Reward tidak sama dengan base score [cite: 241]
-    return baseScore + 5; 
+    return baseScore + 2; 
 }
 
 void ShopSystem::ShowShop() {
